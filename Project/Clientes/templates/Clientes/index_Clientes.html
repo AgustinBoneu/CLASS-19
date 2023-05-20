@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CLIENTES</title>
+</head>
+<body>
+    CLIENTES
+    {% for cliente in Clientes %} 
+    <h2>{{cliente.nombre}}</h2>
+    <h2>{{cliente.apellido}}</h2>  
+    <p>{{cliente.nacimiento}}</p> 
+    {% endfor %}
+    <a href="{% url 'index' %}">Volver al menú principal</a>
+</body>
+</html>
